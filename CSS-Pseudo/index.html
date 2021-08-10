@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>CSS Pseudo Selectors</title>
+  </head>
+  <body>
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="heading">CSS Pseudo Selectors</p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:hover</p>
+        <p class="action-content apply-hover">
+          The greatest glory in living lies not in never falling, but in rising
+          every time we fall.
+        </p>
+        <p class="action-content"><i>-Nelson Mandela</i></p>
+        <p class="action-content note">Hover over the quote to see effect</p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:active</p>
+        <a class="action-content apply-active" href="">
+          The greatest glory in living lies not in never falling, but in rising
+          every time we fall.
+        </a>
+        <p class="action-content"><i>-Nelson Mandela</i></p>
+        <p class="action-content note">Click the link to see effect</p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:focus</p>
+        <div class="action-content">
+          <input type="text" class="apply-focus" />
+        </div>
+        <p class="action-content note">
+          Click inside the input value to see effect
+        </p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:disabled</p>
+        <div class="action-content">
+          <input
+            class="apply-diabled"
+            type="text"
+            placeholder="I am disabled"
+            disabled="true"
+          />
+        </div>
+        <p class="action-content note">
+          Input field is disabled and show in violet border
+        </p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:enabled</p>
+        <div class="action-content">
+          <input class="apply-enabled" type="text" placeholder="I am enabled" />
+        </div>
+        <p class="action-content note">
+          Input field is enabled and show in teal border
+        </p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:in-range and ::out-of-range</p>
+        <div class="action-content">
+          <input
+            class="apply-in-range apply-out-of-range"
+            type="number"
+            min="5"
+            max="10"
+            value="7"
+          />
+        </div>
+        <p class="action-content note">
+          Input field is green till the value entered is in range else red
+        </p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:invalid and valid</p>
+        <div class="action-content">
+          <input
+            class="apply-invalid apply-valid"
+            type="email"
+            value="velvetine"
+          />
+        </div>
+        <p class="action-content note">
+          Input field bg color is coral till the value entered is invalid else
+          green
+        </p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:empty</p>
+        <div class="action-content apply-empty">
+          <p></p>
+          <p>Hi there</p>
+          <p>Hello there what's up</p>
+        </div>
+        <p class="action-content note">
+          Targets all the selected empty elements which has no child elements or
+          data
+        </p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:checked</p>
+        <p class="action-content">
+          <input class="apply-checked" type="checkbox" />
+        </p>
+        <p class="action-content note">Click the checkbox to see effect</p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">::after and ::before pseudo class</p>
+        <div class="box">Hi there, how we are enclosed inside these arrows</div>
+        <p class="action-content note">
+          Inspect the element and check the difference
+        </p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">::first-line and ::first-letter</p>
+        <p class="action-content apply-first-line apply-first-letter">
+          The greatest glory in living lies not in <br />
+          never falling, but in rising every time we fall.
+        </p>
+        <p class="action-content"><i>-Nelson Mandela</i></p>
+        <p class="action-content note">
+          Check the first letter and first line to see the effect
+        </p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">::marker</p>
+        <div class="action-content">
+          <p>I like following fruits</p>
+          <ol class="apply-mark" type="a">
+            <li>Apple</li>
+            <li>Kiwi</li>
+            <li>Orange</li>
+          </ol>
+        </div>
+        <p class="action-content note">
+          Check the bullets/serializers of list items
+        </p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:first-child</p>
+        <div class="action-content">
+          <p>I like following fruits</p>
+          <ol class="apply-first-child" type="a">
+            <li>Apple</li>
+            <li>Kiwi</li>
+            <li>Orange</li>
+          </ol>
+        </div>
+        <p class="action-content note">Check the item of list list</p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:first-of-type</p>
+        <div class="action-content">
+          <p>I like following fruits</p>
+          <ol type="a">
+            <li class="apply-first-of-type">Apple</li>
+            <li class="apply-first-of-type">Kiwi</li>
+            <li class="apply-first-of-type">Orange</li>
+          </ol>
+          <p>I like following cars</p>
+          <ol type="a">
+            <li class="apply-first-of-type">lamborgini veneno</li>
+            <li class="apply-first-of-type">Lycan hyper super sports</li>
+            <li class="apply-first-of-type">Koenigsegg Agera R</li>
+          </ol>
+        </div>
+        <p class="action-content note">Check the first item of bith list</p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">::selection</p>
+        <p class="action-content apply-selection">
+          The greatest glory in living lies not in never falling, but in rising
+          every time we fall.
+        </p>
+        <p class="action-content"><i>-Nelson Mandela</i></p>
+        <p class="action-content note">
+          Select the quote to see the difference
+        </p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:link and :visited</p>
+        <p class="action-content apply-selection">
+          <a href="as" class="apply-link apply-visited">Link 1</a> <br />
+          <a href="asvas" class="apply-link apply-visited">Link 2</a> <br />
+          <a href="sac" class="apply-link apply-visited">Link 3</a>
+        </p>
+        <p class="action-content note">Click the link to see effect</p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:lang</p>
+        <div class="action-content apply-lang">
+          <p lang="en">Hey its English</p>
+          <p lang="en">I know its enlish</p>
+          <p lang="bg">Mine is Bulgarian</p>
+        </div>
+        <p class="action-content note">Check the p element</p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:last-child</p>
+        <div class="action-content">
+          <ol class="apply-last-child">
+            <li>First child</li>
+            <li>Second child</li>
+            <li>third child</li>
+            <li>....</li>
+            <li>last second</li>
+            <li>last</li>
+          </ol>
+        </div>
+        <p class="action-content note">Check the last element</p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:last-of-type</p>
+        <div class="action-content">
+          <ol class="apply-last-of-type">
+            <li>First child</li>
+            <li>Second child</li>
+            <li>third child</li>
+            <li>....</li>
+            <li>last second</li>
+            <li>last</li>
+          </ol>
+          <ol class="apply-last-of-type">
+            <li>First child</li>
+            <li>Second child</li>
+            <li>third child</li>
+            <li>....</li>
+            <li>last second</li>
+            <li>last</li>
+          </ol>
+        </div>
+        <p class="action-content note">Check the last element of each list</p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:optional, :read-only, :read-write, :required</p>
+        <div class="action-content">
+          <input
+            class="apply-required"
+            type="text"
+            placeholder="Required"
+            required
+          />
+          <input
+            class="apply-read-only"
+            type="text"
+            placeholder="Read Only"
+            readonly
+          />
+          <input
+            class="apply-read-write"
+            type="text"
+            placeholder="Read Write"
+          />
+          <input class="apply-optional" type="text" placeholder="Optional" />
+        </div>
+        <p class="action-content note">Check the folowing input fields</p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:not(selector)</p>
+        <div class="action-content apply-not">
+          <p>Hi there you cannot color me</p>
+          <input type="text" placeholder="Required" required />
+          <p>Another p tag</p>
+          <input type="text" placeholder="Read Only" readonly />
+          <span>Its a span</span>
+          <input type="text" placeholder="Read Write" />
+          <input type="text" placeholder="Optional" />
+        </div>
+        <p class="action-content note">Colors every thing other than p tag</p>
+      </div>
+    </div>
+
+    <div class="set-bg">
+      <div class="set-dimensions">
+        <p class="selector">:nth-child and nth-last-child</p>
+        <div class="action-content">
+          <ol class="apply-nth-child apply-nth-last-child">
+            <li>First child</li>
+            <li>Second child</li>
+            <li>third child</li>
+            <li>....</li>
+            <li>last second</li>
+            <li>last</li>
+          </ol>
+        </div>
+        <p class="action-content note">
+          Check the 3rd element from first in blue and 2 element from last
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
