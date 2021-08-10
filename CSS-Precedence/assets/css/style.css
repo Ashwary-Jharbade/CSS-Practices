@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.set-bg {
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+.set-dimensions {
+  margin: 20px;
+  padding: 20px;
+  border: 1px dotted red;
+}
+
+/* check option a and b both one by one */
+
+/* External CSS has 3rd most precedence  */
+
+/* a. without important attribute */
+/* .top-heading{
+  color:black;
+  font-size: 25px;
+} */
+
+/* b. with important attribute */
+.topic-heading{
+  color:black !important;
+  font-size: 25px;
+}
